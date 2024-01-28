@@ -2,7 +2,7 @@
 
 This repository contains a simple AWS CloudFormation stack that creates an Ubuntu20.04 EC2 instance and an associated security group. It also includes two scripts to deploy and delete the stack using the AWS CLI.
 
-## Tabla de Contenidos
+## Table of Contents
 
 - [Files](#files)
 - [Usage](#usage)
