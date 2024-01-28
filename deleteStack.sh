@@ -12,7 +12,7 @@ then
     exit 1
 fi
 
-aws cloudformation delete-stack --profile default --stack-name Tomcat10 --region us-east-1
+aws cloudformation delete-stack --profile default --stack-name Tomcat10
 
 # Array of spinner characters
 spinner=( '/' '-' '\' '|' )
