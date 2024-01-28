@@ -17,4 +17,4 @@ then
 fi
 
 # Launch the CloudFormation stack
-aws cloudformation deploy --profile default --stack-name Tomcat10 --template-file main.yml --region us-east-1
+aws cloudformation deploy --profile default --stack-name Tomcat10 --template-file main.yml
