@@ -1,6 +1,6 @@
 # AWS CloudFormation Mini Stack
 
-This repository contains a simple AWS CloudFormation stack that creates an Ubuntu20.04 EC2 instance and an associated security group. It also includes two scripts to deploy and delete the stack using the AWS CLI.
+This repository contains a simple AWS CloudFormation stack that creates an Ubuntu20.04 EC2 instance with an associated security group and a Tomcat service fully configured serving a test app. It also includes two scripts to deploy and delete the stack using the AWS CLI.
 
 ## Table of Contents
 
