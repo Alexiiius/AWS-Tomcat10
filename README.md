@@ -17,6 +17,8 @@ This repository contains a simple AWS CloudFormation stack that creates an Ubunt
 
 - `deleteStack.sh`: This script deletes the CloudFormation stack using the AWS CLI. It also assumes that the AWS CLI is installed and configured, and that the stack name is 'Tomcat10'.
 
+- `app`: This is the test application that is compiled and deployed on Tomcat as part of the CloudFormation stack creation. Its a simple 'hello world'.
+
 ## Usage
 
 1. Make sure you have the AWS CLI installed and configured with a profile named 'default'.
