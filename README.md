@@ -11,7 +11,7 @@ This repository contains a simple AWS CloudFormation stack that creates an Ubunt
 
 ## Files
 
-- `main.yml`: This is the CloudFormation template that defines the resources for the stack. It creates an EC2 instance and a security group.
+- `tomcat.yml`: This is the CloudFormation template that defines the resources for the stack. It creates an EC2 instance and a security group. It also installs and configures Tomcat, along with its dependencies such as Java. In addition, it compiles a small test application and deploys it on Tomcat for execution.
 
 - `deployStack.sh`: This script deploys the CloudFormation stack using the AWS CLI. It assumes that the AWS CLI is installed and configured, and that the stack name is 'Tomcat10'.
 
