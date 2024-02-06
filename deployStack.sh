@@ -17,4 +17,12 @@ then
 fi
 
 # Launch the CloudFormation stack
-aws cloudformation deploy --profile default --stack-name Tomcat10 --template-file main.yml
+aws cloudformation deploy --profile default --stack-name Tomcat10 --template-file tomcat.yml
+
+if [ $? -eq 0 ]; then
+    salami=$(aws cloudformation list-exports \
+        --query "Exports[?Name=='PublicIP'].Value" --output text)
+    echo "Public IP: http://${salami}:8080"
+    echo "Hola app URL: http://${salami}:8080/hola/hola"
+    echo "It may take a few minutes until instance is ready to use. Please wait..."
+fi
